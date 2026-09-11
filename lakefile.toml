@@ -1,0 +1,20 @@
+name = "CapacityAtlasCausalState"
+version = "0.1.0"
+defaultTargets = ["CapacityAtlasCausal", "capacity_causal_audit"]
+
+[leanOptions]
+autoImplicit = false
+
+[[lean_lib]]
+name = "CapacityAtlasCausal"
+
+[[lean_exe]]
+name = "capacity_causal_audit"
+root = "CapacityAtlasCausal.Audit"
+supportInterpreter = true
+
+[[require]]
+name = "CapacityAtlas"
+git = "https://github.com/TomasOrtega/CapacityAtlas.git"
+rev = "661affbfb9241fcc2b926db78564d81731a42f14"
+subDir = "lean"
