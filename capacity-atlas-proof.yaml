@@ -1,0 +1,12 @@
+problem: causal-state-information-channel
+claim_id: exact-capacity
+
+atlas:
+  repository: TomasOrtega/CapacityAtlas
+  commit: 661affbfb9241fcc2b926db78564d81731a42f14
+  claim_version: 1
+
+lean:
+  toolchain: v4.32.0
+  file: CapacityAtlasCausal.lean
+  declaration: CapacityAtlasCausal.capacityCertificate
